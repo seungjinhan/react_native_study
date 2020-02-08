@@ -1,0 +1,6 @@
+# expo.io ( https://expo.io/learn)
+1. nodejs 설치
+2. sudo npm install expo-cli --global
+
+# project start
+expo init (name)
