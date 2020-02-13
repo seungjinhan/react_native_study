@@ -8,7 +8,12 @@ export default function App() {
   const [myGoals, setMyGoals] = useState([]);
   const [isAddMode, setIsAddMode] = useState(false);
 
+  console.log("####");
+
   const addGoalHandler = goalTitle => {
+    if (goalTitle.length === 0) {
+      return;
+    }
     setMyGoals(currendGoads => [
       ...currendGoads,
       { id: Math.random().toString(), value: goalTitle }
