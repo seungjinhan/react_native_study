@@ -1,7 +1,7 @@
 import React from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
-import { NavigationScreenProp, NavigationState } from 'react-navigation';
-import { Linking } from 'react-native';
+import {NavigationScreenProp, NavigationState} from 'react-navigation';
+import {Linking} from 'react-native';
 import Styled from 'styled-components/native';
 
 import Input from '~/Components/Input';
@@ -29,18 +29,18 @@ interface Props {
   navigation: NavigationScreenProp<NavigationState>;
 }
 
-const Login = ({ navigation }: Props) => {
+const Login = ({navigation}: Props) => {
   return (
     <Container>
       <FormContainer>
-        <Input style={{ marginBottom: 16 }} placeholder="이메일" />
+        <Input style={{marginBottom: 16}} placeholder="이메일" />
         <Input
-          style={{ marginBottom: 16 }}
+          style={{marginBottom: 16}}
           placeholder="비밀번호"
           secureTextEntry={true}
         />
         <Button
-          style={{ marginBottom: 24 }}
+          style={{marginBottom: 24}}
           label="로그인"
           onPress={() => {
             console.log('test');

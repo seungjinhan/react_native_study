@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
-import { NavigationScreenProp, NavigationState } from 'react-navigation';
+import {NavigationScreenProp, NavigationState} from 'react-navigation';
 import Styled from 'styled-components/native';
 
 import BitCatalogList from './BigCatalogList';
@@ -21,7 +21,7 @@ interface Props {
   navigation: NavigationScreenProp<NavigationState>;
 }
 
-const MovieHome = ({ navigation }: Props) => {
+const MovieHome = ({navigation}: Props) => {
   const _logout = () => {
     AsyncStorage.removeItem('key');
     navigation.navigate('LoginNavigator');
@@ -78,7 +78,7 @@ interface INaviProps {
   navigation: NavigationScreenProp<NavigationState>;
 }
 
-MovieHome.navigationOptions = ({ navigation }: INaviProps) => {
+MovieHome.navigationOptions = ({navigation}: INaviProps) => {
   const logout = navigation.getParam('logout');
   return {
     title: 'MOVIEAPP',
